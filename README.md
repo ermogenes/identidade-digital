@@ -81,7 +81,9 @@ Também é comum considerar e-mails ou perfis recém-criados ou não encontrados
 
 ### Afirmação de identidade com foco em análise de comportamento
 
-> __em breve__
+Consiste na criação de um perfil de usuário com base em seu comportamento (cadência de digitação, padrão de movimento de ponteiro do mouse, padrão de toque/arrasto), geralmente no primeiro uso de uma aplicação (ou de outra aplicação que compartilhe o perfil).
+
+Pode ser usado para obter indícios de confirmação da identidade, ou para risco de fraude. Por exemplo, usuários podem ter dificuldades no preenchimento de um formulário que um agente malicioso não apresentaria (por repetir muitas vezes, ou por ser um _bot_ pré-programado).
 
 ### Afirmação de identidade com foco em número de telefone
 
