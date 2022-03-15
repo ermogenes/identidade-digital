@@ -48,7 +48,14 @@ A técnica também é conhecida como "ID+_selfie_" ou "eKYC" (_eletronic- Know Y
 
 ### Afirmação de identidade do mundo real com foco em dados
 
-> __em breve__
+Consiste na comparação dos dados fornecidos pelo usuário (nome, data de nascimento, endereço, …) com bases de dados confiáveis (registros governamentais, dados censitários, dados financeiros, …).
+
+Pode se manifestar como uma verificação passiva (os dados são fornecidos pelo usuário e verificados pela aplicação) ou por algum método de desafio-resposta (onde o usuário é desafiado a responder corretamente a alguma pergunta criada com base em seus dados conhecidos previamente pela aplicação).
+
+![](img/questions.png)  
+[Fonte: gov.br](http://faq-login-unico.servicos.gov.br/en/latest/_perguntasdafaq/contaacesso.html#cadastro-com-as-informacoes-basicas-do-cidadao)
+
+Esta técnica foi a mais utilizada pelo mercado durante muito tempo. Ainda assim, entrega um nível baixo de confiança, dada a dependência de "algo que _não somente você sabe_" (seus dados pessoais). Não é recomendado seu uso como verificação de identidade, mas somente como suporte à verificação.
 
 ### Afirmação de identidade com foco em dispositivos
 
