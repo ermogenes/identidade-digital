@@ -87,7 +87,18 @@ Pode ser usado para obter indícios de confirmação da identidade, ou para risc
 
 ### Afirmação de identidade com foco em número de telefone
 
-> __em breve__
+Consiste no uso de dados obtidos pela rede telefônica para correlacionar o usuário com uma identidade do mundo real.
+
+Entre as informações passíveis de uso estão:
+- Ligação feita pelo dispositivo a uma central que identifica a chamada;
+- Análise de sinal para detecção de possíveis grampos;
+- Correlação de número telefônico com cadastro de proprietário;
+- Idade do _SIM card_ (se muito recente pode indicar risco de fraude);
+- Criação de perfil de voz;
+- Identificação por voz (em acessos subsequentes).
+
+![](img/gsma-mobile-connect.png)  
+[Brasil entre os países que suportam _GSMA Mobile Connect_](https://www.gsma.com/identity/mobile-connect-deployment-map)
 
 ## Referências
 - KHAN, Akif; CARE, Jonathan. Market Guide for Identity Proofing and Affirmation. Gartner, 2020.
