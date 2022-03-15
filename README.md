@@ -68,7 +68,16 @@ Pode ser utilizado para inferir risco em alguns casos de uso de verificação de
 
 ### Afirmação de identidade com foco em atributos digitais
 
-> __em breve__
+Consiste no uso de atributos digitais (como e-mail, endereços IP e perfis em redes sociais) para afirmação de identidade, preferencialmente em correlação com identidades do mundo real.
+
+Segundo o Gartner, o e-mail tem se provado um atributo de identidade particularmente persistente, tendendo a permanecer por grandes períodos sem alteração.
+
+Apesar de não poderem ser utilizados como identificação única e inequívoca, dados de geolocalização por IP podem ajudar a identificar fraudes caso divirjam consideravelmente do histórico do usuário ou de endereços previamente conhecidos.
+
+![](img/ip-geolocation.png)  
+[Serviço de geolocalização por IP](https://www.ip2location.com/demo/)
+
+Também é comum considerar e-mails ou perfis recém-criados ou não encontrados em nenhuma base de dados anteriormente como potencialmente arriscados.
 
 ### Afirmação de identidade com foco em análise de comportamento
 
