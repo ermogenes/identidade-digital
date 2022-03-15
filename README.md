@@ -59,7 +59,13 @@ Esta técnica foi a mais utilizada pelo mercado durante muito tempo. Ainda assim
 
 ### Afirmação de identidade com foco em dispositivos
 
-> __em breve__
+Consiste na geração de um identificador único do usuário baseado em informações combinadas de hardware e software do dispositivo do usuário, chamado de _device fingerprint_.
+
+![](img/device-fingerprint.png)
+
+[Identificação do usuário mesmo em abas anônimas (fingerprintjs.com)](https://fingerprintjs.com/)
+
+Pode ser utilizado para inferir risco em alguns casos de uso de verificação de identidade em acessos subsequentes. Por exemplo, várias contas sendo criadas pelo mesmo dispositivo podem ser consideradas indício de fraude, assim como o acesso pelo mesmo dispositivo onde o cadastro foi criado pode ser um sinal de confiança.
 
 ### Afirmação de identidade com foco em atributos digitais
 
