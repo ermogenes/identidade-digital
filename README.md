@@ -26,9 +26,24 @@ Várias alternativas são utilizadas e disponíveis no mercado. Vamos discutir a
 
 ### Verificação de identidade do mundo real com foco em documentos
 
-> __em breve__
+Consiste no uso de dispositivos de captura de imagem (_webcams_ ou câmeras de _smartphones_) em canais digitais remotos (tipicamente aplicações baseadas em _browser_ ou aplicativos _mobile_) para obtenção de imagens ou vídeos de documentos físicos.
 
-Também conhecido como "ID+_selfie_" ou "eKYC" (_eletronic- Know Your Consumer_).
+![](img/doc_verify.png)  [Imagem: biometricupdate.com](https://www.biometricupdate.com/201905/digital-identity-and-document-verification-market-to-generate-15-billion-by-2024)
+
+A partir da captura podemos:
+- identificar o documento (é um documento conhecido? é um RG ou uma CNH?);
+- buscar por sinais de adulteração e falsificação;
+- realizar OCR dos textos;
+- obter a foto de identificação.
+
+Normalmente esse processo está associado a um mecanismo de detecção de presença "ao vivo" (_liveness detection_, ou _Presentation Attack Detection_). Nesse caso, a foto do documento é comparada com uma _selfie_ do usuário tirada no momento do processo (imagem ou vídeo). Caso haja uma base prévia, também é possível realizar o reconhecimento facial.
+
+![](img/selfie.png)  
+[Imagem: computerid.com.br]((https://computerid.com.br/solucoes/solucoes_view.php?c=10&s=16&p=9))
+
+Este método entrega um nível aceitável de confiança, dada a presença de "algo que _somente você possui_" (seu documento) e "algo que _somente você é_" (sua face).
+
+A técnica também é conhecida como "ID+_selfie_" ou "eKYC" (_eletronic- Know Your Consumer_).
 
 ### Afirmação de identidade do mundo real com foco em dados
 
