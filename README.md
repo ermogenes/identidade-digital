@@ -18,11 +18,13 @@ Verificação de identidade, neste texto, se refere a combinação de diversas a
 
 Além da verificação, outros métodos podem ser utilizados, com menor nível de confiabilidade, para adicionar evidências de suporte à verificação. Vamos chamá-los de métodos de afirmação de identidade. Seu uso como única fonte de verificação é desencorajado.
 
-Buscaremos alternativas à tradicional (e altamente confiável) verificação física de identidade realizada por agentes públicos em balcões de atendimento tradicionais, como no caso do serviço de identidade paulistano [Senha Web](https://www.prefeitura.sp.gov.br/cidade/secretarias/fazenda/servicos/senhaweb/), em prol de soluções nativamente remotas.
+Buscaremos alternativas à tradicional (e altamente confiável) verificação física de identidade realizada por agentes públicos em balcões de atendimento tradicionais, como no caso do serviço de identidade paulistano [Senha Web](https://www.prefeitura.sp.gov.br/cidade/secretarias/fazenda/servicos/senhaweb/), em prol de soluções nativamente remotas, em canais digitais.
 
 ## Técnicas
 
-Várias alternativas são utilizadas e disponíveis no mercado. Vamos discutir algumas das alternativas.
+Várias alternativas são disponibilizadas pelo mercado. As soluções mais robustas devem utilizar a combinação de diversas técnicas em momentos diferentes para alcançar um nível de confiabilidade adequado ao problema.
+
+Vamos discutir algumas das alternativas.
 
 ### Verificação de identidade do mundo real com foco em documentos
 
@@ -55,7 +57,9 @@ Pode se manifestar como uma verificação passiva (os dados são fornecidos pelo
 ![](img/questions.png)  
 [Fonte: gov.br](http://faq-login-unico.servicos.gov.br/en/latest/_perguntasdafaq/contaacesso.html#cadastro-com-as-informacoes-basicas-do-cidadao)
 
-Esta técnica foi a mais utilizada pelo mercado durante muito tempo. Ainda assim, entrega um nível baixo de confiança, dada a dependência de "algo que _não somente você sabe_" (seus dados pessoais). Não é recomendado seu uso como verificação de identidade, mas somente como suporte à verificação.
+Esta técnica foi a mais utilizada pelo mercado durante muito tempo. Ainda assim, entrega um nível baixo de confiança, dada a dependência de "algo que _não somente você sabe_" (seus dados pessoais).
+
+Considerando o crescimento de vazamentos de dados, engenharia social e _malwares_, não é recomendado seu uso como verificação de identidade, mas somente como suporte à verificação.
 
 ### Afirmação de identidade com foco em dispositivos
 
@@ -99,6 +103,7 @@ Entre as informações passíveis de uso estão:
 
 ![](img/gsma-mobile-connect.png)  
 [Brasil entre os países que suportam _GSMA Mobile Connect_](https://www.gsma.com/identity/mobile-connect-deployment-map)
+
 
 ## Referências
 - KHAN, Akif; CARE, Jonathan. Market Guide for Identity Proofing and Affirmation. Gartner, 2020.
