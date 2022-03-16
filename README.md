@@ -104,6 +104,87 @@ Entre as informações passíveis de uso estão:
 ![](img/gsma-mobile-connect.png)  
 [Brasil entre os países que suportam _GSMA Mobile Connect_](https://www.gsma.com/identity/mobile-connect-deployment-map)
 
+## BYOI - _Bring Your Own Identity_
+
+Um busca de reduzir a quantidade de de identidades digitais que uma pessoa gerencia, o conceito de BYOI traz a ideia de reutilização das suas identidades reconhecidas em uma fonte confiável em outros pontos de acesso.
+
+A maioria das implementações usam _Single Sign-On_ (SSO) via [OAuth](https://oauth.net/) e [OpenID](https://openid.net/). O nível de confiabilidade varia bastante conforme o emissor.
+
+![](img/oauth-providers.png)  
+[Exemplos de serviços online que permitem login social no Auth0](https://auth0.com/blog/social-login-on-the-rise/)
+
+Em termos de UX, a escolha de alguns poucos provedores é preferida. O de muitas opções prejudica o usuário tanto visualmente (["NASCAR problem"](https://indieweb.org/NASCAR_problem)) quanto funcionalmente (["paradoxo da escolha"](https://en.wikipedia.org/wiki/The_Paradox_of_Choice)).
+
+### Redes Sociais
+
+Identidades gerenciadas por sistemas de redes sociais, e-mails e outros serviços _online_ como Facebook, Google, Microsoft, Apple e afins.
+
+![](img/social-login.png)  
+[Tela de _login_ do Slack com opções de Login Social](https://slack.com/signin#/signin)
+
+Podem garantir a diferenciação entre um usuário e outro, mas quase nada podem fazer para garantir que o usuário é quem ele diz ser (por exemplo, o possuidor de um CPF específico). O grande número de contas _fake_ torna desencorajador o seu uso como único método de identificação de uma pessoa real (apesar frequentemente ser suficiente para o comércio de produtos e serviços, por exemplo).
+
+Comumente são utilizadas somente para autenticação, em forma de vínculos adicionais a uma conta já verificada anteriormente.
+
+### Governo
+
+Identidades digitais atestadas por uma entidade governamental responsável, geralmente carregando o peso das verificações físicas associadas.
+
+O [gov.br](https://acesso.gov.br/) e o [LoginSP](https://login.sp.gov.br/) são iniciativas com esse fim, e permitem a integração das identidades entre diversos sistemas governamentais com alta confiabilidade e suporte a SSO com OAuth/OpenID. Em São Paulo, o [Senha Web](https://www.prefeitura.sp.gov.br/cidade/secretarias/fazenda/servicos/senhaweb/) possui verificação física de identidade em balcões de atendimento.
+
+![](img/login-ecpf.png)  
+[Senha Web permite autenticação com certificado digital](https://senhawebsts.prefeitura.sp.gov.br/)
+
+Um exemplo híbrido é o [e-CPF](https://certificadodigital.imprensaoficial.com.br/certificados-digitais/e-cpf) (digital ou digital+físico, como nos tokens A3), que inclui as entidades certificadoras no processo, permitindo outros serviços como assinatura digital de documentos. 
+
+![](img/token-ecpf-a3-prodesp.png)  
+[e-CPF físico (A3) emitido pela Prodesp](https://certificadodigital.imprensaoficial.com.br/certificados-digitais/e-cpf)
+
+É utilizado, por exemplo, para afirmação de identidade no [gov.br](http://faq-login-unico.servicos.gov.br/en/latest/_perguntasdafaq/comoadquirircertificadodigitalpessoafisica.html), e como método de autenticação no [Senha Web](https://www.prefeitura.sp.gov.br/cidade/secretarias/fazenda/servicos/senhaweb/).
+
+![](img/certi-digital-afirmacao.png)  
+[Afirmação de identidade com certificado digital no gov.br](http://faq-login-unico.servicos.gov.br/en/latest/_perguntasdafaq/comoadquirircertificadodigitalpessoafisica.html#como-atribuir-o-selo-certificado-digital-de-pessoa-fisica)
+
+O uso de documentos legíveis por máquina com o uso de QrCode e NFC devem começar a se tornar realidade em um futuro próximo, pois já são suportados por alguns documentos, como na CNH, passaportes e o novo RG brasileiro.
+
+### Instituições Financeiras
+
+Bancos possuem uma grande base de usuários verificados, inclusive por razões de _compliance_, e podem prestar o serviço de verificação de identidade.
+
+Com o crescimento do padrão [Open Banking](https://openbankingbrasil.org.br/), isso se torna uma realidade factível e de simples implementação, tornando os bancos em potenciais provedores de identidade para SSO.
+
+No processo de registro do gov.br, dois métodos são disponibilizados em parceria com instituições bancárias. Em um deles usa-se SSO, e no outro gera-se um código de verificação (código NAI do _cidadão.br_/DataPrev) no _internet banking_ que é validado no processo de registro.
+
+![](img/bancos-sso.png)  
+[SSO com instituições bancárias no gov.br](https://acesso.gov.br/)
+
+![](img/first-access-nai.png)  
+[Uso do NAI no registro do cidadão.br](https://mte.api.dataprev.gov.br/auth/login?pat_first_access=true)
+
+### Operadoras de Telefonia
+
+O padrão [GSMA Mobile Connect](https://www.gsma.com/identity/mobile-connect) permite que operadoras de telefonia disponibilizem serviços de identidade com alta portabilidade por estarem vinculados aos _SIM cards_ dos dispositivos.
+
+A autenticação e a afirmação são aplicações práticas, porém a confiabilidade da verificação varia de acordo com os requisitos nacionais de identificação no registro de compra de SIM cards, além de possuir cobertura limitada a poucos países (o Brasil é um deles).
+
+Sua operação permite o SSO aprovado automaticamente quando solicitado pelo próprio dispositivo, ou então via aprovação com SMS caso em outro dispositivo.
+
+![](img/mobile-connect.png)  
+[Exemplo de implementação de Mobile Connect com WSO2](https://wso2.com/library/webinars/2016/11/securing-access-to-saas-apps-with-gsma-mobile-connect/)
+
+No futuro deve incluir biometria nos cadastros, o que pode simplificar o processo e melhorar a confiabilidade.
+
+### Uso Corporativo e Provedores de BYOI
+
+O mercado corporativo de verificação de identidade é bastante variado, incluindo provedores de identidade com as mais diversas fontes de verificação.
+
+![](img/idme.png)  
+[O provedor ID.me possui _compliance_ para diversos serviços governamentais americanos](https://www.id.me/business)
+
+Além disso, organizações costumam integrar seus próprios diretórios de colaboradores como fontes de identidade, normalmente usando LDAP e Active Directory.
+
+![](img/sso-ad.png)  
+[Acesso usando conta Azure AD integrada para alunos das Escolas Técnicas Estaduais](http://etec.sp.gov.br/)
 
 ## Referências
 - KHAN, Akif; CARE, Jonathan. Market Guide for Identity Proofing and Affirmation. Gartner, 2020.
