@@ -98,7 +98,7 @@ Entre as informações passíveis de uso estão:
 [Brasil entre os países que suportam _GSMA Mobile Connect_](https://www.gsma.com/identity/mobile-connect-deployment-map)
 
 ## BYOI - _Bring Your Own Identity_
-Um busca de reduzir a quantidade de de identidades digitais que uma pessoa gerencia, o conceito de BYOI traz a ideia de reutilização das suas identidades reconhecidas em uma fonte confiável em outros pontos de acesso.
+Um busca de reduzir a quantidade de identidades digitais que uma pessoa gerencia, o conceito de BYOI traz a ideia de reutilização das suas identidades reconhecidas em uma fonte confiável em outros pontos de acesso.
 
 A maioria das implementações usam _Single Sign-On_ (SSO) via [OAuth](https://oauth.net/) e [OpenID](https://openid.net/). O nível de confiabilidade varia bastante conforme o emissor.
 
@@ -201,7 +201,7 @@ Quanto maior o rol de funcionalidades que o caso de uso exija, menor será a cha
 São características de um orquestrador:
 - Configuração de _workflows_, preferencialmente em estilo _no-code_;
 - Integração entre diversos fornecedores de verificação e afirmação;
-- Normalização do diferentes resultados;
+- Normalização dos diferentes resultados;
 - Gestão de políticas de _workflow_, de forma a controlar a UX (_go_/_no-go_);
 - Ferramentas de análise e monitoramento;
 - Flexibilidade para execução de testes A/B, facilitando a mudança de políticas;
@@ -227,7 +227,7 @@ UX para captura ao vivo de _selfie_, permitindo verificação da presença do us
 Suporte à extração de dados armazenados em diferentes mídias.
 
 ### Automação
-Uso de processo automatizados, usando validação por analistas somente em casos extremos.
+Uso de processos automatizados, usando validação por analistas somente em casos extremos.
 
 ### Acurácia
 Baixa presença de falsos positivos/negativos e alta detecção de fraudes.
@@ -272,6 +272,6 @@ Abaixo, uma lista **não extensiva** de fornecedores de serviços de verificaç�
 ## Referências
 - KHAN, Akif; CARE, Jonathan. Market Guide for Identity Proofing and Affirmation. Gartner, 2020.
 - KHAN, Akif; CARE, Jonathan. Buyer’s Guide for Identity Proofing. Gartner, 2021.
-- TERHORST, Philipp; KOLF, Jan N; _et al._. [A Comprehensive Study on Face Recognition Biases Beyond Demographics](https://arxiv.org/pdf/2103.01592.pdf). Journal of Latex class files, vol. 14, no. 8, 2015.
+- TERHORST, Philipp; KOLF, Jan N; _et al_. [A Comprehensive Study on Face Recognition Biases Beyond Demographics](https://arxiv.org/pdf/2103.01592.pdf). Journal of Latex class files, vol. 14, no. 8, 2015.
 - BUOLAMWINI, Joy; GEBRU, Timnit. [Gender Shades: Intersectional Accuracy Disparities in
 Commercial Gender Classification](http://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf). Proceedings of Machine Learning Research 81:1–15, 2018.
