@@ -211,7 +211,47 @@ São características de um orquestrador:
 [Interface de configuração de _workflow_ de identidade - Okta](https://www.okta.com/platform/workflows/workflows-for-lifecycle-management/)
 
 ## _Features_ de provedores de identidade
-_em breve_
+### Integração
+Suporte a aplicações web e _mobile_, disponibilização de SDKs e APIs, _deploys_ _on premises_ ou _cloud_.
+
+### Captura de imagens de documentos
+Disponibilização de UX amigável de captura.
+
+### Cobertura de formatos
+Identificação e OCR de diferentes documentos de diversas geografias, e seu processo de manutenção contínua.
+
+### _Selfie_ e _liveness detection_
+UX para captura ao vivo de _selfie_, permitindo verificação da presença do usuário.
+
+### NFC, códigos de barras e QRCodes
+Suporte à extração de dados armazenados em diferentes mídias.
+
+### Automação
+Uso de processo automatizados, usando validação por analistas somente em casos extremos.
+
+### Acurácia
+Baixa presença de falsos positivos/negativos e alta detecção de fraudes.
+
+### Gestão do viés demográfico
+Existência de métricas e clareza no trato da questão.
+
+### Armazenamento de dados de identidade
+Controle do cliente sobre os métodos e locais de armazenamento dos dados que identificam um usuário.
+
+### Conexões com terceiros
+Disponibilidade de integrações para verificação e afirmação pré-construídas, e facilidade na configuração/construção de outras.
+
+### Deduplicação
+Detecção e tratamento de duplicação de identidades.
+
+### Autenticação
+Configuração de diferentes fluxos para registro, autenticação e recuperação de contas de acordo com os requisitos do negócio.
+
+### Aumento de dados de perfil
+Dados que o provedor é capaz de adicionar a um perfil criado.
+
+### _Dashboards_ e relatórios
+Ferramentas de gestão do processo.
 
 ## Referências
 - KHAN, Akif; CARE, Jonathan. Market Guide for Identity Proofing and Affirmation. Gartner, 2020.
