@@ -1,9 +1,10 @@
-name: Convert README to PDF
+name: Creta PDF from README
 
 on:
   push:
-    paths:
-    - 'README.md'
+    branches: [main]
+  pull_request:
+    branches: [main]
 
 jobs:
   convert_md: 
