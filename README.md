@@ -21,20 +21,18 @@ Além da verificação, outros métodos podem ser utilizados, com menor nível d
 Buscaremos alternativas à tradicional (e altamente confiável) verificação física de identidade realizada por agentes públicos em balcões de atendimento tradicionais, como no caso do serviço de identidade paulistano [Senha Web](https://www.prefeitura.sp.gov.br/cidade/secretarias/fazenda/servicos/senhaweb/), em prol de soluções nativamente remotas, em canais digitais.
 
 ## Técnicas
-
 Várias alternativas são disponibilizadas pelo mercado. As soluções mais robustas devem utilizar a combinação de diversas técnicas em momentos diferentes para alcançar um nível de confiabilidade adequado ao problema.
 
 Vamos discutir algumas das alternativas.
 
 ### Verificação de identidade do mundo real com foco em documentos
-
 Consiste no uso de dispositivos de captura de imagem (_webcams_ ou câmeras de _smartphones_) em canais digitais remotos (tipicamente aplicações baseadas em _browser_ ou aplicativos _mobile_) para obtenção de imagens ou vídeos de documentos físicos.
 
 ![](img/doc_verify.png)  
 [Imagem: biometricupdate.com](https://www.biometricupdate.com/201905/digital-identity-and-document-verification-market-to-generate-15-billion-by-2024)
 
 A partir da captura podemos:
-- identificar o documento (é um documento conhecido? é um RG ou uma CNH?);
+- identificar o documento (é um documento conhecido? [é um RG](https://www.terra.com.br/noticias/infograficos/nova-carteira-de-identidade/index.htm) ou uma CNH?);
 - buscar por sinais de adulteração e falsificação;
 - realizar OCR dos textos;
 - obter a foto de identificação.
@@ -49,7 +47,6 @@ Este método entrega um nível aceitável de confiança, dada a presença de "al
 A técnica também é conhecida como "ID+_selfie_" ou "eKYC" (_eletronic- Know Your Consumer_).
 
 ### Afirmação de identidade do mundo real com foco em dados
-
 Consiste na comparação dos dados fornecidos pelo usuário (nome, data de nascimento, endereço, …) com bases de dados confiáveis (registros governamentais, dados censitários, dados financeiros, …).
 
 Pode se manifestar como uma verificação passiva (os dados são fornecidos pelo usuário e verificados pela aplicação) ou por algum método de desafio-resposta (onde o usuário é desafiado a responder corretamente a alguma pergunta criada com base em seus dados conhecidos previamente pela aplicação).
@@ -62,7 +59,6 @@ Esta técnica foi a mais utilizada pelo mercado durante muito tempo. Ainda assim
 Considerando o crescimento de vazamentos de dados, engenharia social e _malwares_, não é recomendado seu uso como verificação de identidade, mas somente como suporte à verificação.
 
 ### Afirmação de identidade com foco em dispositivos
-
 Consiste na geração de um identificador único do usuário baseado em informações combinadas de hardware e software do dispositivo do usuário, chamado de _device fingerprint_.
 
 ![](img/device-fingerprint.png)  
@@ -71,7 +67,6 @@ Consiste na geração de um identificador único do usuário baseado em informa�
 Pode ser utilizado para inferir risco em alguns casos de uso de verificação de identidade em acessos subsequentes. Por exemplo, várias contas sendo criadas pelo mesmo dispositivo podem ser consideradas indício de fraude, assim como o acesso pelo mesmo dispositivo onde o cadastro foi criado pode ser um sinal de confiança.
 
 ### Afirmação de identidade com foco em atributos digitais
-
 Consiste no uso de atributos digitais (como e-mail, endereços IP e perfis em redes sociais) para afirmação de identidade, preferencialmente em correlação com identidades do mundo real.
 
 Segundo o Gartner, o e-mail tem se provado um atributo de identidade particularmente persistente, tendendo a permanecer por grandes períodos sem alteração.
@@ -84,13 +79,11 @@ Apesar de não poderem ser utilizados como identificação única e inequívoca,
 Também é comum considerar e-mails ou perfis recém-criados ou não encontrados em nenhuma base de dados anteriormente como potencialmente arriscados.
 
 ### Afirmação de identidade com foco em análise de comportamento
-
 Consiste na criação de um perfil de usuário com base em seu comportamento (cadência de digitação, padrão de movimento de ponteiro do mouse, padrão de toque/arrasto), geralmente no primeiro uso de uma aplicação (ou de outra aplicação que compartilhe o perfil).
 
 Pode ser usado para obter indícios de confirmação da identidade, ou para risco de fraude. Por exemplo, usuários podem ter dificuldades no preenchimento de um formulário que um agente malicioso não apresentaria (por repetir muitas vezes, ou por ser um _bot_ pré-programado).
 
 ### Afirmação de identidade com foco em número de telefone
-
 Consiste no uso de dados obtidos pela rede telefônica para correlacionar o usuário com uma identidade do mundo real.
 
 Entre as informações passíveis de uso estão:
@@ -105,7 +98,6 @@ Entre as informações passíveis de uso estão:
 [Brasil entre os países que suportam _GSMA Mobile Connect_](https://www.gsma.com/identity/mobile-connect-deployment-map)
 
 ## BYOI - _Bring Your Own Identity_
-
 Um busca de reduzir a quantidade de de identidades digitais que uma pessoa gerencia, o conceito de BYOI traz a ideia de reutilização das suas identidades reconhecidas em uma fonte confiável em outros pontos de acesso.
 
 A maioria das implementações usam _Single Sign-On_ (SSO) via [OAuth](https://oauth.net/) e [OpenID](https://openid.net/). O nível de confiabilidade varia bastante conforme o emissor.
@@ -116,7 +108,6 @@ A maioria das implementações usam _Single Sign-On_ (SSO) via [OAuth](https://o
 Em termos de UX, a escolha de alguns poucos provedores é preferida. O de muitas opções prejudica o usuário tanto visualmente (["NASCAR problem"](https://indieweb.org/NASCAR_problem)) quanto funcionalmente (["paradoxo da escolha"](https://en.wikipedia.org/wiki/The_Paradox_of_Choice)).
 
 ### Redes Sociais
-
 Identidades gerenciadas por sistemas de redes sociais, e-mails e outros serviços _online_ como Facebook, Google, Microsoft, Apple e afins.
 
 ![](img/social-login.png)  
@@ -127,7 +118,6 @@ Podem garantir a diferenciação entre um usuário e outro, mas quase nada podem
 Comumente são utilizadas somente para autenticação, em forma de vínculos adicionais a uma conta já verificada anteriormente.
 
 ### Governo
-
 Identidades digitais atestadas por uma entidade governamental responsável, geralmente carregando o peso das verificações físicas associadas.
 
 O [gov.br](https://acesso.gov.br/) e o [LoginSP](https://login.sp.gov.br/) são iniciativas com esse fim, e permitem a integração das identidades entre diversos sistemas governamentais com alta confiabilidade e suporte a SSO com OAuth/OpenID. Em São Paulo, o [Senha Web](https://www.prefeitura.sp.gov.br/cidade/secretarias/fazenda/servicos/senhaweb/) possui verificação física de identidade em balcões de atendimento.
@@ -148,7 +138,6 @@ Um exemplo híbrido é o [e-CPF](https://certificadodigital.imprensaoficial.com.
 O uso de documentos legíveis por máquina com o uso de QrCode e NFC devem começar a se tornar realidade em um futuro próximo, pois já são suportados por alguns documentos, como na CNH, passaportes e o novo RG brasileiro.
 
 ### Instituições Financeiras
-
 Bancos possuem uma grande base de usuários verificados, inclusive por razões de _compliance_, e podem prestar o serviço de verificação de identidade.
 
 Com o crescimento do padrão [Open Banking](https://openbankingbrasil.org.br/), isso se torna uma realidade factível e de simples implementação, tornando os bancos em potenciais provedores de identidade para SSO.
@@ -162,7 +151,6 @@ No processo de registro do gov.br, dois métodos são disponibilizados em parcer
 [Uso do NAI no registro do cidadão.br](https://mte.api.dataprev.gov.br/auth/login?pat_first_access=true)
 
 ### Operadoras de Telefonia
-
 O padrão [GSMA Mobile Connect](https://www.gsma.com/identity/mobile-connect) permite que operadoras de telefonia disponibilizem serviços de identidade com alta portabilidade por estarem vinculados aos _SIM cards_ dos dispositivos.
 
 A autenticação e a afirmação são aplicações práticas, porém a confiabilidade da verificação varia de acordo com os requisitos nacionais de identificação no registro de compra de SIM cards, além de possuir cobertura limitada a poucos países (o Brasil é um deles).
@@ -175,7 +163,6 @@ Sua operação permite o SSO aprovado automaticamente quando solicitado pelo pr�
 No futuro deve incluir biometria nos cadastros, o que pode simplificar o processo e melhorar a confiabilidade.
 
 ### Uso Corporativo e Provedores de BYOI
-
 O mercado corporativo de verificação de identidade é bastante variado, incluindo provedores de identidade com as mais diversas fontes de verificação.
 
 ![](img/idme.png)  
@@ -186,6 +173,49 @@ Além disso, organizações costumam integrar seus próprios diretórios de cola
 ![](img/sso-ad.png)  
 [Acesso usando conta Azure AD integrada para alunos das Escolas Técnicas Estaduais](http://etec.sp.gov.br/)
 
+## Considerações adicionais para aquisição
+### Viés demográfico
+As soluções de detecção facial são probabilísticas, e dependem dos seus algoritmos e dos seus dados de treinamento. Há [diversos](https://arxiv.org/pdf/2103.01592.pdf) [estudos](http://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf) que mostram que a diferença é significativa nos resultados de acordo com características demográficas como sexo, idade e etnia.
+
+![](img/demo-bias-gendershades.png)  
+[Algoritmos tem baixa precisão ao avaliar mulheres negras, segundo o estudo do GenderShades](http://gendershades.org/)
+
+Dois tipos de erros são mais comuns:
+- Falso positivo: duas imagens de pessoas diferentes são avaliadas como o mesma pessoa;
+- Falso negativo: duas imagens da mesma pessoa são avaliadas como pessoas diferentes.
+
+Segundo o Gartner, o número de falsos positivos entre pessoas asiáticas pode chegar a ser 100 vezes maior do que entre caucasianos. Esse número é reduzido em algoritmos desenvolvidos na Ásia. Falsos negativos são mais comuns em mulheres e pessoas jovens.
+
+É importante avaliar os resultados, e medir os riscos de negócio, legais e de imagem.
+
+### Corroboração de identidade
+A afirmação baseada em dados normalmente se baseia em dados de fontes autoritativas convencionais, como fontes governamentais, financeiras, postais ou eleitorais.
+
+O uso de fontes não convencionais podem ajudar, como verificação em entidades parceiras. Por exemplo, diferentes _e-commerces_ em uma mesma rede de confiança poderiam verificar se um usuário consta em uma base compartilhada, reduzindo a possibilidade de fraude.
+
+Dados de registro também podem ser comparados em bases de dados de vazamentos, que poderiam indicar um possível uso indevido.
+
+### Orquestração
+Quanto maior o rol de funcionalidades que o caso de uso exija, menor será a chance de encontrar um fornecedor que as ofereça em um único produto. O grande desafio que se apresenta é realizar a orquestração dos diversos provedores em um _workflow_ robusto que não degrade a experiência do usuário, aumente a complexidade da solução, ou os custos. Um único ponto de integração é o ideal.
+
+São características de um orquestrador:
+- Configuração de _workflows_, preferencialmente em estilo _no-code_;
+- Integração entre diversos fornecedores de verificação e afirmação;
+- Normalização do diferentes resultados;
+- Gestão de políticas de _workflow_, de forma a controlar a UX (_go_/_no-go_);
+- Ferramentas de análise e monitoramento;
+- Flexibilidade para execução de testes A/B, facilitando a mudança de políticas;
+- Redundância de _workflows_ entre diferentes fornecedores.
+
+![](img/workflow-okta.gif)  
+[Interface de configuração de _workflow_ de identidade - Okta](https://www.okta.com/platform/workflows/workflows-for-lifecycle-management/)
+
+## _Features_ de provedores de identidade
+_em breve_
+
 ## Referências
 - KHAN, Akif; CARE, Jonathan. Market Guide for Identity Proofing and Affirmation. Gartner, 2020.
 - KHAN, Akif; CARE, Jonathan. Buyer’s Guide for Identity Proofing. Gartner, 2021.
+- TERHORST, Philipp; KOLF, Jan N; _et al._. [A Comprehensive Study on Face Recognition Biases Beyond Demographics](https://arxiv.org/pdf/2103.01592.pdf). Journal of Latex class files, vol. 14, no. 8, 2015.
+- BUOLAMWINI, Joy; GEBRU, Timnit. [Gender Shades: Intersectional Accuracy Disparities in
+Commercial Gender Classification](http://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf). Proceedings of Machine Learning Research 81:1–15, 2018.
