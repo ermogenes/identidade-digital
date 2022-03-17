@@ -13,12 +13,6 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2.0.0
 
-    - name: Build
-      uses: lothindir/pandoc-markdown-action@v0.1
-      with:
-        markdown: "README.md"
-        pdf: "Notas-identidade-digital"
-
   convert_via_pandoc:
     runs-on: ubuntu-18.04
     steps:
