@@ -18,8 +18,7 @@ jobs:
       with:
         input_dir: ./
         output_dir: ./
-        images_dir: ./img
-        image_import: ./img
+        images_dir: img
         build_html: false
       
     - name: Commit PDF
