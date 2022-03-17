@@ -1,7 +1,8 @@
 # Verificação de Identidade Digital
 Notas sobre o processo de verificação de identidade digital, com foco na prestação de serviços públicos por entidades governamentais.
 
-[![PDF](https://github.com/ermogenes/identidade-digital/actions/workflows/pdfgen.yml/badge.svg)](https://github.com/ermogenes/identidade-digital/actions/workflows/pdfgen.yml)
+[![PDF](https://github.com/ermogenes/identidade-digital/actions/workflows/pdfgen.yml/badge.svg)](https://github.com/ermogenes/identidade-digital/actions/workflows/pdfgen.yml) 
+[Download](README.pdf)
 
 ## O problema
 O clamor pela transformação digital e a pressão por serviços remotos nos períodos pandêmico e pós-pandêmico são motores de inovação e exigem criteriosos requisitos de segurança e privacidade.

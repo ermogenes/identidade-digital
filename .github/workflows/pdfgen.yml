@@ -20,6 +20,10 @@ jobs:
         output_dir: ./
         images_dir: img
         build_html: false
+    
+    - name: Rename
+      run: |
+        mv README.pdf Notas-identidade-digital.pdf
       
     - name: Commit PDF
       uses: stefanzweifel/git-auto-commit-action@v4
