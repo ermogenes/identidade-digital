@@ -28,7 +28,7 @@ jobs:
         args: >-  # allows you to break string into multiple lines
           --standalone
           --output=Notas-identidade-digital.pdf
-        README.md
+          README.md
 
   commit:
     runs-on: ubuntu-latest
