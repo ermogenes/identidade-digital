@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 jobs:
-  convert: 
+  prepare: 
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
@@ -18,15 +18,21 @@ jobs:
       with:
         markdown: "README.md"
         pdf: "Notas-identidade-digital"
-    
+
+  convert_via_pandoc:
+    runs-on: ubuntu-18.04
+    steps:
     - name: Build
       uses: docker://pandoc/core:2.9
       with:
         args: >-  # allows you to break string into multiple lines
           --standalone
           --output=Notas-identidade-digital.pdf
-          README.md
-      
+        README.md
+
+  commit:
+    runs-on: ubuntu-latest
+    steps:  
     - name: Commit PDF
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
