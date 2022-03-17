@@ -7,20 +7,22 @@ on:
     branches: [main]
 
 jobs:
-  convert_md: 
+  convert: 
     runs-on: ubuntu-latest
     steps:
-
     - name: Checkout
       uses: actions/checkout@v2.0.0
       with:
         fetch-depth: 1
 
-    - name: Create PDF
-      uses: scottypate/md-to-pdf@v0.1.1
-      env: {
-        PDF_DIR: './'
-      }
+    - name: Build
+      - uses: baileyjm02/markdown-to-pdf@v1
+        with:
+          input_dir: ./
+          output_dir: ./
+          images_dir: ./img
+          image_import: ./img
+          build_html: false
 
     - name: Upload artifacts
       uses: actions/upload-artifact@v1
