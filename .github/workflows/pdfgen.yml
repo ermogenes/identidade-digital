@@ -7,15 +7,11 @@ on:
     branches: [main]
 
 jobs:
-  prepare: 
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v2.0.0
-
   convert_via_pandoc:
     runs-on: ubuntu-18.04
     steps:
+    - name: Checkout
+      uses: actions/checkout@v2.0.0
     - name: Build
       uses: docker://pandoc/latex
       with:
@@ -25,10 +21,6 @@ jobs:
           --to=pdf
           --output=./Notas-identidade-digital.pdf
           ./README.md
-
-  commit:
-    runs-on: ubuntu-latest
-    steps:  
     - name: Commit PDF
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
