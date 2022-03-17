@@ -20,12 +20,12 @@ jobs:
         pdf: "Notas-identidade-digital"
     
     - name: Build
-      - uses: docker://pandoc/core:2.9
-        with:
-          args: >-  # allows you to break string into multiple lines
-            --standalone
-            --output=Notas-identidade-digital.pdf
-            README.md
+      uses: docker://pandoc/core:2.9
+      with:
+        args: >-  # allows you to break string into multiple lines
+          --standalone
+          --output=Notas-identidade-digital.pdf
+          README.md
       
     - name: Commit PDF
       uses: stefanzweifel/git-auto-commit-action@v4
