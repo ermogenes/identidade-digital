@@ -253,6 +253,22 @@ Dados que o provedor é capaz de adicionar a um perfil criado.
 ### _Dashboards_ e relatórios
 Ferramentas de gestão do processo.
 
+## Fornecedores
+
+Abaixo, uma lista **não extensiva** de fornecedores de serviços de verificação identidade. Foram listados somente _players_ em que foi possível encontrar alguma referência de atendimento ao Brasil.
+
+- [Acuant](https://www.acuant.com/) *
+- [Daon](https://www.daon.com/) *
+- [Serasa Experian](https://www.serasaexperian.com.br/solucoes/crosscore/) *
+- [Idemia](https://www.idemia.com/) *
+- [Idwall](https://idwall.co/)
+- [Jumio](https://www.jumio.com/) *
+- [Trulioo](https://www.trulioo.com/) *
+- [Unico](https://unico.io/unico-check/)
+- [4stop](https://4stop.com/) *
+
+\* constantes em listagens do Gartner
+
 ## Referências
 - KHAN, Akif; CARE, Jonathan. Market Guide for Identity Proofing and Affirmation. Gartner, 2020.
 - KHAN, Akif; CARE, Jonathan. Buyer’s Guide for Identity Proofing. Gartner, 2021.
