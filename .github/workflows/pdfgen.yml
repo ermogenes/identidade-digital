@@ -1,4 +1,4 @@
-name: Creta PDF from README
+name: Create PDF from README
 
 on:
   push:
@@ -21,11 +21,6 @@ jobs:
         images_dir: ./img
         image_import: ./img
         build_html: false
-
-    - name: Upload artifacts
-      uses: actions/upload-artifact@v1
-      with:
-        retention-days: 90
       
     - name: Commit PDF
       uses: stefanzweifel/git-auto-commit-action@v4
