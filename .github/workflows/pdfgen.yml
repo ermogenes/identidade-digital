@@ -19,9 +19,13 @@ jobs:
         markdown: "README.md"
         pdf: "Notas-identidade-digital"
     
-    - name: Rename
-      run: |
-        mv README.pdf Notas-identidade-digital.pdf
+    - name: Build
+      - uses: docker://pandoc/core:2.9
+        with:
+          args: >-  # allows you to break string into multiple lines
+            --standalone
+            --output=Notas-identidade-digital.pdf
+            README.md
       
     - name: Commit PDF
       uses: stefanzweifel/git-auto-commit-action@v4
