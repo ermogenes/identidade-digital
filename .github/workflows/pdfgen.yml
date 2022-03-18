@@ -20,6 +20,9 @@ jobs:
           --from=markdown
           --to=pdf
           --output=./Notas-identidade-digital.pdf
+          --number-sections
+          --table-of-contents
+          -V papersize=a4
           -V links-as-notes=true
           ./README.md
     - name: Commit PDF
