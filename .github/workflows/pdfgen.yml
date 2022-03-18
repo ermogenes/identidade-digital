@@ -20,6 +20,7 @@ jobs:
           --from=markdown
           --to=pdf
           --output=./Notas-identidade-digital.pdf
+          --metadata-file=./meta.yaml
           --number-sections
           --table-of-contents
           --shift-heading-level-by=-1
