@@ -3,7 +3,7 @@ Notas sobre o processo de verificação de identidade digital, com foco na prest
 
 Sobre||
 --|--|
-![](img/qr-pdf.png)| Março de 2022 <br><br>**Autores**: <br>[Ermogenes Palacio](https://github.com/ermogenes/)<br>Eduardo Amaro Bueno <br><br> _Prodam/SP - Núcleo de Inovação_ <br><br><hr> Disponível no GitHub: [repo](https://github.com/ermogenes/identidade-digital) \| [pdf](https://github.com/ermogenes/identidade-digital/blob/main/Notas-identidade-digital.pdf)
+![](img/qr-pdf.png)| Março de 2022 <br /><br />**Autores**: <br />[Ermogenes Palacio](https://github.com/ermogenes/)<br />Eduardo Amaro Bueno <br /><br /> _Prodam/SP - Núcleo de Inovação_ <br /><br /><hr> Disponível no GitHub: [repo](https://github.com/ermogenes/identidade-digital) \| [pdf](https://github.com/ermogenes/identidade-digital/blob/main/Notas-identidade-digital.pdf)
 
 ## O problema
 O clamor pela transformação digital e a pressão por serviços remotos nos períodos pandêmico e pós-pandêmico são motores de inovação e exigem criteriosos requisitos de segurança e privacidade.

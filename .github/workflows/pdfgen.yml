@@ -22,6 +22,8 @@ jobs:
           --output=./Notas-identidade-digital.pdf
           --number-sections
           --table-of-contents
+          --pdf-engine-opt=--no-toc-relocation
+          --shift-heading-level-by=-1
           -V papersize=a4
           -V links-as-notes=true
           ./README.md
