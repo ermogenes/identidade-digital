@@ -20,6 +20,7 @@ jobs:
           --from=markdown
           --to=pdf
           --output=./Notas-identidade-digital.pdf
+          -V links-as-notes=true
           ./README.md
     - name: Commit PDF
       uses: stefanzweifel/git-auto-commit-action@v4

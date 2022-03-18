@@ -1,6 +1,10 @@
 # Verificação de Identidade Digital
 Notas sobre o processo de verificação de identidade digital, com foco na prestação de serviços públicos por entidades governamentais.
 
+Sobre||
+--|--|
+![](img/qr-pdf.png)| Março de 2022 <br><br>**Autores**: <br>[Ermogenes Palacio](https://github.com/ermogenes/)<br>Eduardo Amaro Bueno <br><br> _Prodam/SP - Núcleo de Inovação_ <br><br><hr> Disponível no GitHub: [repo](https://github.com/ermogenes/identidade-digital) \| [pdf](https://github.com/ermogenes/identidade-digital/blob/main/Notas-identidade-digital.pdf)
+
 ## O problema
 O clamor pela transformação digital e a pressão por serviços remotos nos períodos pandêmico e pós-pandêmico são motores de inovação e exigem criteriosos requisitos de segurança e privacidade.
 
@@ -32,6 +36,7 @@ Consiste no uso de dispositivos de captura de imagem (_webcams_ ou câmeras de _
 [Imagem: biometricupdate.com](https://www.biometricupdate.com/201905/digital-identity-and-document-verification-market-to-generate-15-billion-by-2024)
 
 A partir da captura podemos:
+
 - identificar o documento (é um documento conhecido? [é um RG](https://www.terra.com.br/noticias/infograficos/nova-carteira-de-identidade/index.htm) ou uma CNH?);
 - buscar por sinais de adulteração e falsificação;
 - realizar OCR dos textos;
@@ -87,6 +92,7 @@ Pode ser usado para obter indícios de confirmação da identidade, ou para risc
 Consiste no uso de dados obtidos pela rede telefônica para correlacionar o usuário com uma identidade do mundo real.
 
 Entre as informações passíveis de uso estão:
+
 - Ligação feita pelo dispositivo a uma central que identifica a chamada;
 - Análise de sinal para detecção de possíveis grampos;
 - Correlação de número telefônico com cadastro de proprietário;
@@ -181,6 +187,7 @@ As soluções de detecção facial são probabilísticas, e dependem dos seus al
 [Algoritmos tem baixa precisão ao avaliar mulheres negras, segundo o estudo do GenderShades](http://gendershades.org/)
 
 Dois tipos de erros são mais comuns:
+
 - Falso positivo: duas imagens de pessoas diferentes são avaliadas como o mesma pessoa;
 - Falso negativo: duas imagens da mesma pessoa são avaliadas como pessoas diferentes.
 
@@ -199,6 +206,7 @@ Dados de registro também podem ser comparados em bases de dados de vazamentos, 
 Quanto maior o rol de funcionalidades que o caso de uso exija, menor será a chance de encontrar um fornecedor que as ofereça em um único produto. O grande desafio que se apresenta é realizar a orquestração dos diversos provedores em um _workflow_ robusto que não degrade a experiência do usuário, aumente a complexidade da solução, ou os custos. Um único ponto de integração é o ideal.
 
 São características de um orquestrador:
+
 - Configuração de _workflows_, preferencialmente em estilo _no-code_;
 - Integração entre diversos fornecedores de verificação e afirmação;
 - Normalização dos diferentes resultados;
