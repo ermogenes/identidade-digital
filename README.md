@@ -280,6 +280,4 @@ Abaixo, uma lista **não extensiva** de fornecedores de serviços de verificaç�
 Commercial Gender Classification](http://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf). Proceedings of Machine Learning Research 81:1–15, 2018.
 
 ![](img/qr-pdf.png)  
-[github](https://github.com/ermogenes/identidade-digital) \| [pdf](https://github.com/ermogenes/identidade-digital/blob/main/Notas-identidade-digital.pdf)
-
 © _Prodam/SP - Núcleo de Inovação_, Março de 2022.
