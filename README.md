@@ -279,7 +279,7 @@ Abaixo, uma lista **não extensiva** de fornecedores de serviços de verificaç�
 - BUOLAMWINI, Joy; GEBRU, Timnit. [Gender Shades: Intersectional Accuracy Disparities in
 Commercial Gender Classification](http://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf). Proceedings of Machine Learning Research 81:1–15, 2018.
 
-___
-Disponível no GitHub: [repo](https://github.com/ermogenes/identidade-digital) \| [pdf](https://github.com/ermogenes/identidade-digital/blob/main/Notas-identidade-digital.pdf)  
-© _Prodam/SP - Núcleo de Inovação_, Março de 2022  
 ![](img/qr-pdf.png)  
+[github](https://github.com/ermogenes/identidade-digital) \| [pdf](https://github.com/ermogenes/identidade-digital/blob/main/Notas-identidade-digital.pdf)
+
+© _Prodam/SP - Núcleo de Inovação_, Março de 2022.
