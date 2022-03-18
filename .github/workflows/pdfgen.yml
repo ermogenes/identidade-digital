@@ -24,6 +24,7 @@ jobs:
           --table-of-contents
           --pdf-engine-opt=--no-toc-relocation
           --shift-heading-level-by=-1
+          -V toc-title=Sumário
           -V papersize=a4
           -V links-as-notes=true
           ./README.md

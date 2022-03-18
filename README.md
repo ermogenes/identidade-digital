@@ -1,14 +1,3 @@
----
-title: "Notas sobre Verificação de Identidade Digital"
-authors: [Ermogenes Palacio, Eduardo Amaro Bueno]
-date: "2022-03-18"
-subject: "Identidade Digital"
-lang: "pt-BR"
-header-includes: |
-    \usepackage{sectsty}
-    \sectionfont{\clearpage}
-...
-
 # Notas sobre Verificação de Identidade Digital
 Notas sobre o processo de verificação de identidade digital, com foco na prestação de serviços públicos por entidades governamentais.
 
