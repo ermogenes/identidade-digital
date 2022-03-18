@@ -1,5 +1,4 @@
 # Notas sobre Verificação de Identidade Digital
-Notas sobre o processo de verificação de identidade digital, com foco na prestação de serviços públicos por entidades governamentais.
 
 ## O problema
 O clamor pela transformação digital e a pressão por serviços remotos nos períodos pandêmico e pós-pandêmico são motores de inovação e exigem criteriosos requisitos de segurança e privacidade.
@@ -281,12 +280,6 @@ Abaixo, uma lista **não extensiva** de fornecedores de serviços de verificaç�
 Commercial Gender Classification](http://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf). Proceedings of Machine Learning Research 81:1–15, 2018.
 
 ## Sobre
-Notas sobre Verificação de Identidade Digital
-
-Autores:  
-[Ermogenes Palacio](https://github.com/ermogenes/)  
-Eduardo Amaro Bueno
-
 _Prodam/SP - Núcleo de Inovação_  
 Março de 2022
 

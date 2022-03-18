@@ -6,7 +6,7 @@ author:
 affiliation: 'Prodam/SP'
 keywords: ['identidade digital', 'governo']
 abstract: |
-  Notas sobre o processo de verificação de identidade digital, com foco na prestação de serviços públicos por entidades governamentais.
+  Notas sobre o processo de verificação de identidade digital, com foco na prestação de serviços públicos por entidades governamentais. O problema é apresentado, acompanhado de técnicas para o tratamento do problema e considerações úteis para aquisição de serviços de terceiros.
 date: 'Março de 2022'
 language: pt-BR
 ...
