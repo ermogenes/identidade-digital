@@ -167,8 +167,8 @@ No futuro deve incluir biometria nos cadastros, o que pode simplificar o process
 ### Uso Corporativo e Provedores de BYOI
 O mercado corporativo de verificação de identidade é bastante variado, incluindo provedores de identidade com as mais diversas fontes de verificação.
 
-![](img/idme.png)  
-[O provedor ID.me possui _compliance_ para diversos serviços governamentais americanos](https://www.id.me/business)
+![](img/idme-students.png)  
+[O provedor ID.me possui _compliance_ para diversos serviços governamentais americanos. Imagem: Lenovo.com](https://www.id.me/business)
 
 Além disso, organizações costumam integrar seus próprios diretórios de colaboradores como fontes de identidade, normalmente usando LDAP e Active Directory.
 
