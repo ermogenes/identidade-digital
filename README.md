@@ -175,6 +175,13 @@ Além disso, organizações costumam integrar seus próprios diretórios de cola
 ![](img/sso-ad.png)  
 [Acesso usando conta Azure AD integrada para alunos das Escolas Técnicas Estaduais](http://etec.sp.gov.br/)
 
+### Identidade sem senha (_passwordless_)
+A especificação [WebAuthn](https://webauthn.guide/) e o projeto [FIDO2](https://fidoalliance.org/fido2/) abrem portas para um modelo de identidade desvinculado de senhas, integrando com autenticadores fortes nos dispositivos, como o [Windows Hello] e o [Apple Touch ID].
+
+Nesse modelo são criadas duas chaves de criptografia no momento do registro: uma pública e uma privada. A chave privada é armazenada de forma segura no dispositivo do usuário. A pública é enviada para ser armazenada pelo servidor, e e não tem valor nenhum para um agente malicioso. Na autenticação, o servidor envia dados para que sejam assinados digitalmente pelo usuário, usando a sua chave privada. Ao receber os dados assinados e verificar com a chave pública armazenada, pode-se garantir que eles vieram do usuário correto.
+
+Essa especificação já está implementada nos navegadores mais modernos e pode permitir uma autenticação super segura envolvendo a biometria do usuário armazenada em seu dispositivo, bem como o uso de autenticadores biométricos físicos.
+
 ## Considerações para aquisição
 ### Viés demográfico
 As soluções de detecção facial são probabilísticas e dependem dos seus algoritmos e dos seus dados de treinamento. Há [diversos](https://arxiv.org/pdf/2103.01592.pdf) [estudos](http://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf) que mostram diferença significativa nos resultados de acordo com características demográficas como sexo, idade e etnia.
