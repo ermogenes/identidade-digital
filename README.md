@@ -176,7 +176,10 @@ Além disso, organizações costumam integrar seus próprios diretórios de cola
 [Acesso usando conta Azure AD integrada para alunos das Escolas Técnicas Estaduais](http://etec.sp.gov.br/)
 
 ### Identidade sem senha (_passwordless_)
-A especificação [WebAuthn](https://webauthn.guide/) e o projeto [FIDO2](https://fidoalliance.org/fido2/) abrem portas para um modelo de identidade desvinculado de senhas, integrando com autenticadores fortes nos dispositivos, como o [Windows Hello] e o [Apple Touch ID].
+A especificação [WebAuthn](https://webauthn.guide/) e o projeto [FIDO2](https://fidoalliance.org/fido2/) abrem portas para um modelo de identidade desvinculado de senhas, integrando biometria com autenticadores fortes nos dispositivos, como o [Windows Hello](https://support.microsoft.com/pt-br/windows/saiba-mais-sobre-o-windows-hello-e-configure-o-dae28983-8242-bb2a-d3d1-87c9d265a5f0) e o Apple [Touch ID](https://support.apple.com/pt-br/HT201371) e [Face ID](https://support.apple.com/pt-br/HT208109).
+
+![](img/face-id.png)  
+[Biometria facial em dispositivos Apple](https://support.apple.com/pt-br/HT208109)
 
 Nesse modelo são criadas duas chaves de criptografia no momento do registro: uma pública e uma privada. A chave privada é armazenada de forma segura no dispositivo do usuário. A pública é enviada para ser armazenada pelo servidor, e e não tem valor nenhum para um agente malicioso. Na autenticação, o servidor envia dados para que sejam assinados digitalmente pelo usuário, usando a sua chave privada. Ao receber os dados assinados e verificar com a chave pública armazenada, pode-se garantir que eles vieram do usuário correto.
 
